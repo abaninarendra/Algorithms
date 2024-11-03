@@ -1,0 +1,31 @@
+Steps:
+
+Using Euclidean Algorithm
+1. Divide the larger number by smaller number
+2. Take the remainder and replace the larger number with smaller number and the smaller number with remainder.
+3. Repeat the process until remainder is zero, the non-zero remainder is GCD.
+
+
+20,10
+a=20, b=10
+remainder = 20%10 = 0 (so return 10)
+
+
+48,18
+a=48 , b=18
+loop1:
+ remainder = 48%18 =12
+loop2:
+ a=18 , b=12
+ remainder=18%12=6
+loop3:
+ a=12, b=6
+ remainder=12%6=0
+ so retrun 6
+
+Method2:
+take the prime factors of each 
+and 
+48=2^4*3
+18=2*3^2 
+So gcd's common of both is 2x3 = 6
